@@ -21,18 +21,9 @@ except Exception as e:
     exit()
 
 SHEET_MAPPING = {
-    "BrokerTerminal": "https://docs.google.com/spreadsheets/d/1MH4YSodfGZtxBya4anKUoFXAFA5EguKW12fB4v5csvI/edit?gid=0#gid=0",
-    "MasterAccount": "https://docs.google.com/spreadsheets/d/1ySARGOn2NCHq6KAt3O7CZHa-lGx9MuaaKylg2fSHuVE/edit?gid=0#gid=0",
-    "Silhouette": "https://docs.google.com/spreadsheets/d/1zXEVElackB6EOPGne4KfKCundNMB7PC-8jKjX4K-IMQ/edit?gid=0#gid=0",
-    "Quanta": "https://docs.google.com/spreadsheets/d/1slFtmAzc8QR4X2v8qoMrJvLVg4wLfTfseCXKf_e3UY8/edit?gid=0#gid=0",
-    "Zenith": "https://docs.google.com/spreadsheets/d/11l6e6Wk34-ysVpF2u-RESoi1_2_AKPiGCrhulo9DVZQ/edit?gid=0#gid=0",
-    "Trinity": "https://docs.google.com/spreadsheets/d/1E3-zhbAcptv5xZH25Spi2dfAzwM2y97PFJCYpcWyYQE/edit?gid=0#gid=0",
-    "Obscura": "https://docs.google.com/spreadsheets/d/1CMOlIf0HzYk1icAjm0H4P-lbvZFH6i1twfFRFdPZ2mk/edit?gid=0#gid=0",
-    "Veritas": "https://docs.google.com/spreadsheets/d/1iaMdIRrx85X75Wl-9q5POCAahO4sgMD3TQlctsthYDk/edit?gid=0#gid=0",
-    "Halcyon": "https://docs.google.com/spreadsheets/d/1dpnWnlMZUtSdXO7d-JDs3467jjBpIHiamcBhfz36Dtg/edit?gid=0#gid=0",
-    "Oblique": "https://docs.google.com/spreadsheets/d/1r5Yg7Mem1ik5oxaw-FlILBgsVXqbHXgCtGNpItviK4Q/edit?gid=0#gid=0",
-    "Price_Chart": "https://docs.google.com/spreadsheets/d/1eLTzCIFh3Ca12yejYZB3e9jiXtpMBMn1bp-nE9AfMDw/edit?gid=0#gid=0",
-    "Admin_Controls": "https://docs.google.com/spreadsheets/d/1dR93UhWFkvSNUR-Hn63OEECo1EtK7zKMDQEVVvafgqA/edit?gid=0#gid=0",
+    "BrokerTerminal": "https://docs.google.com/spreadsheets/d/your_file_link",
+    "MasterAccount": "https://docs.google.com/spreadsheets/d/your_file_link",
+    "Silhouette": "https://docs.google.com/spreadsheets/d/your_file_link",
 }
 
 MIN_ORDER_VALUE = 7500  # ₹7,500
@@ -672,4 +663,5 @@ if __name__ == "__main__":
         update_price_chart()
 
         logging.info(f"Waiting {CYCLE_INTERVAL_SECONDS} seconds before next full cycle...")
+
         time.sleep(CYCLE_INTERVAL_SECONDS)
