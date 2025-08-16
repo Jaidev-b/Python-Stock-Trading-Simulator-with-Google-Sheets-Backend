@@ -30,3 +30,15 @@ Prices fluctuate using **VWAP (Volume Weighted Average Price)**, random market m
 ```bash
 git clone https://github.com/your-username/mock-stock-simulator.git
 cd mock-stock-simulator
+
+pip install -r requirements.txt
+
+### 3. Setup Google Sheets API
+
+Create a Google Cloud Service Account.
+
+Enable Google Sheets API.
+
+Download credentials.json and place it in the repo root.
+
+Share all simulation sheets (BrokerTerminal, Price_Chart, etc.) with the service account email.
